@@ -1,6 +1,6 @@
 # GA7-220501096-AA5-EV01 — Servicios web de registro e inicio de sesion
 
-API educativa independiente, en PHP procedural y MariaDB, con respuestas JSON de exito y error. No depende del codigo, credenciales ni tablas de Don Pan. Pendiente cotejar la entrega con la guia y el instrumento de evaluacion exactos de SENA: este repositorio implementa el alcance solicitado, sin afirmar cumplimiento de requisitos no suministrados.
+API educativa independiente, en PHP procedural y MariaDB, con respuestas JSON de exito y error. No depende del codigo, credenciales ni tablas de Don Pan. 
 
 ## Requisitos y estructura
 
@@ -20,7 +20,7 @@ docs/             contrato, resultados y alcance de la evidencia
 
 ## Instalacion independiente
 
-1. Preparar una instancia NUEVA de MariaDB con directorio de datos propio y un puerto diferente de 3306. No copiar ni reutilizar la carpeta `C:/xampp/mysql/data`, su configuracion ni sus tablas de permisos.
+1. Preparar una instancia NUEVA de MariaDB con directorio de datos propio y un puerto diferente de 3306. 
 2. Antes de crear tablas, verificar `SELECT @@port, @@datadir, VERSION();`. Ambos valores deben corresponder al laboratorio.
 3. Crear en esa instancia una base vacia `sena_ga7_ev01`, con `utf8mb4`. Seleccionarla explicitamente e importar `sql/schema.sql`. El archivo no contiene `USE`, `CREATE DATABASE`, `DROP` ni semillas.
 4. Crear una cuenta de aplicacion exclusiva en la instancia aislada, con `SELECT` e `INSERT` sobre esa base. Generar su secreto localmente. No usar una cuenta de Don Pan.
