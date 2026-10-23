@@ -1,0 +1,43 @@
+# Configuracion y secretos locales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+/secrets/
+/credentials/
+
+# Ejecucion, dependencias y temporales
+.runtime/
+/vendor/
+*.log
+*.pid
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+/tmp/
+/temp/
+
+# Paquetes y respaldos; conservar el esquema reproducible
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.bak
+*.BAK
+*.backup
+*.dump
+*.sql
+*.sql.partial
+!/sql/schema.sql
+/backups/
+/respaldos/
+/entregas/
